@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาอสังหาริมทรัพย์</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+         body, .header, .search-section input, .search-section select, .search-section button, .category a, .footer {
+    font-family: 'Kanit', sans-serif !important;
+}
+  
+          body {
+            font-family: 'Kanit', sans-serif !important;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            font-family: 'Kanit', sans-serif !important;
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+             
+        }
+
+        .search-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-section input,
+        .search-section select,
+        .search-section button {
+            width: 100%;
+            padding: 9px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+            background: #fff;
+        }
+
+        .search-section button {
+            background: #000;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-section button:hover {
+            background: #444;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .category {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .category a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+            flex-direction: column;
+        }
+
+        .category a:hover {
+            background: #f5f5f5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .category i {
+            font-size: 25px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+            color: #888;
+            font-size: 14px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">ค้นหาอสังหาริมทรัพย์ ทดสอบ</div>
+
+    <div class="search-section">
+        <input type="text" placeholder="กรอกคีย์เวิร์ดค้นหา">
+        <select>
+            <option>เลือกประเภท</option>
+            <option>บ้าน</option>
+            <option>ที่ดิน</option>
+        </select>
+        <button>ค้นหา</button>
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <a href="https://earth.google.com/web/@13.56401426,100.75993763,2.47974224a,2620.7115559d,35y,0h,0t,0r/data=CgRCAggBMigKJgokCiAxRFM5Ym12c3ZLeThhd1VSU2tpVnUxSDF3WTl6X2R3QSACOgMKATBCAggASggIrYqviQQQAQ" target="_blank">
+                <i class="fas fa-tree"></i>
+                <span>ที่ดิน</span>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+                <i class="fas fa-home"></i>
+                <span>บ้าน</span>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+                <i class="fas fa-building"></i>
+                <span>คอนโด</span>
+            </a>
+        </div>
+        <div class="category">
+            <a href="#">
+                <i class="fas fa-hotel"></i>
+                <span>อพาร์ทเมนท์</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">© 2024 ระบบค้นหาอสังหาริมทรัพย์</div>
+</body>
+</html>
